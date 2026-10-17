@@ -1,0 +1,9 @@
+
+services:
+  - type: web
+    name: markvia-trader-giv
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app
+    
